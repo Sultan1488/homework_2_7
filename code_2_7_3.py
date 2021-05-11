@@ -9,7 +9,7 @@ class Person:
 
     def calculate_age(self, years):
         self.years = years
-        print(f'Через {years} лет John исполнится {self.age + years}')
+        print(f'Через {years} лет {self.name} исполнится {self.age + years}')
 
 
 p = Person('John', 23, 'male')
