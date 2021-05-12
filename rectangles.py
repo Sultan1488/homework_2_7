@@ -7,19 +7,8 @@ class Rectangle:
               f'Width: {width}\n'
               f'Height: {height}')
 
-        if type(length) != int:
-            raise ValueError
-        if type(width) != int:
-            raise ValueError
-        if type(height) != int:
-            raise ValueError
-        if length < 0:
-            raise ValueError
-        if width < 0:
-            raise ValueError
-        if height < 0:
+        if type(length) and type(width) and type(height) not in [int, float] or length < 0 or width < 0 or height < 0:
             raise ValueError
     
     def calculate_volume(self):
-        volume_rectangle = self.length * self.width * self.height
-        print(volume_rectangle)
+        return self.length * self.width * self.height
