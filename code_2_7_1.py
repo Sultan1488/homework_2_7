@@ -1,7 +1,7 @@
 class VideoGame:
     name = 'Witcher 3'
     developers = 'CD Project'
-    main_character = 'Geralt 0f Rivia'
+    main_character = 'Geralt of Rivia'
 
     def info(self):
         print(f'Name: {self.name}\n'
